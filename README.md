@@ -18,6 +18,6 @@ Install compatible version of Pytorch that is compatible with the CUDA toolkit v
 
 Run inference on the GPU instance using the Mistral 7B model and the provided Jupyter notebook
 
-## GPU EC2 instance in AWS P3.2xlarge with quantized model weights
+## [GPU EC2 instance in AWS P3.2xlarge with quantized model weights](https://github.com/rajiv-sudo/LLM-Inference/tree/main/LLM_Mistral_7B_Quantized_Inference_EC2_GPU)
 
 ## CPU EC2 instance in AWS M7i.8xlarge with quantized model weights

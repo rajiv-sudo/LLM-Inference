@@ -10,13 +10,13 @@ We will do our setup and testing in AWS EC2 instances. Here are the scenarios we
 
 In this tutorial, we will:
 
-Create a GPU instance in AWS – p3.8xl instance that contains four NVIDIA Tesla V100 GPUs
+1. Create a GPU instance in AWS – p3.8xl instance that contains four NVIDIA Tesla V100 GPUs
 
-Install compatible version of CUDA toolkit and ensure that the toolkit is installed and visible and ready to go
+2. Install compatible version of CUDA toolkit and ensure that the toolkit is installed and visible and ready to go
 
-Install compatible version of Pytorch that is compatible with the CUDA toolkit version
+3. Install compatible version of Pytorch that is compatible with the CUDA toolkit version
 
-Run inference on the GPU instance using the Mistral 7B model and the provided Jupyter notebook
+4. Run inference on the GPU instance using the Mistral 7B model and the provided Jupyter notebook
 
 ## [02 - GPU EC2 instance in AWS P3.2xlarge with quantized model weights](https://github.com/rajiv-sudo/LLM-Inference/tree/main/LLM_Mistral_7B_Quantized_Inference_EC2_GPU)
 

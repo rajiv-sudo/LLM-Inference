@@ -18,7 +18,7 @@ In this tutorial, we will:
 
 4. Run inference on the GPU instance using the Mistral 7B model and the provided Jupyter notebook
 
-## [02 - GPU EC2 instance in AWS P3.2xlarge with model's native precision](https://github.com/rajiv-sudo/LLM-Inference/blob/main/Mistral-7B-GPU-EC2-P3.2xl)
+## [02 - GPU EC2 instance in AWS P3.2xlarge with model's native precision](https://github.com/rajiv-sudo/LLM-Inference/tree/main/Mistral-7B-GPU-EC2-P3.2xl)
 In the previous tutorial, we ran the inference on P3.8xlarge GPU based EC2 instance. This instance is $12+ per hour based on on-demand pricing. This machine has four NVIDIA Tesla V100 GPUs each with 16 GB of GPU memory. So, in total this machine had 64 GB of GPU memory. 
 
 The next smaller EC2 instance config in P3 family is the P3.2xlarge machine. This machine has one V100 GPU with 16 GB of memory. We will run the inference in this ```P3.2xlarge EC2``` instance.

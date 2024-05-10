@@ -18,14 +18,14 @@ In this tutorial, we will:
 
 4. Run inference on the GPU instance using the Mistral 7B model and the provided Jupyter notebook
 
-## [02 - GPU EC2 instance in AWS P3.2xlarge with quantized model weights](https://github.com/rajiv-sudo/LLM-Inference/tree/main/LLM_Mistral_7B_Quantized_Inference_EC2_GPU)
+## [02 - GPU EC2 instance in AWS P3.2xlarge with model's native precision]([https://github.com/rajiv-sudo/LLM-Inference/tree/main/LLM_Mistral_7B_Quantized_Inference_EC2_GPU](https://github.com/rajiv-sudo/LLM-Inference/blob/main/Mistral-7B-GPU-EC2-P3.2xl)
 In the previous tutorial, we ran the inference on P3.8xlarge GPU based EC2 instance. This instance is $12+ per hour based on on-demand pricing. This machine has four NVIDIA Tesla V100 GPUs each with 16 GB of GPU memory. So, in total this machine had 64 GB of GPU memory. 
 
-For the 7B parameter Mistral model with native precision (BF16), we need approx 16GB of GPU memory to load the model. The next smaller EC2 instance config in P3 family is the P3.2xlarge machine. This machine has one V100 GPU with 16 GB of memory. So, if we try to run the model in P3.2xlarge EC2 instance, then it errors out saying ```**out of memory**```
+The next smaller EC2 instance config in P3 family is the P3.2xlarge machine. This machine has one V100 GPU with 16 GB of memory. We will run the inference in this ```P3.2xlarge EC2``` instance.
 
 The P3.2xlarge machine is $3+ per hour based on on-demand pricing. This is almost one-fourth the price for the P3.8xlarge instance
 
-So if we want to get acceptable performance from the Mistral 7B model with sparse inferencing, but use a smaller GPU machine, not as expensive as the P3.8xlarge machine, our option is to quantize the model in a lower precision and be able to run it on a smaller GOU machine like P3.2xlarge.
+We will see how the LLM inferencing performance is for the Mistral 7B model, on this smaller GPU machine, not as expensive as the P3.8xlarge machine.
 
 In this tutorial, we will:
 
@@ -35,8 +35,7 @@ In this tutorial, we will:
 
 3. Install compatible version of Pytorch that is compatible with the CUDA toolkit version
 
-4. Using the provided Jupyter notebook, we will first quantize the weights of the Mistral 7B model to INT8. This will reduce the model memeory requirement to almost half of what is needed to load the model in the native BF16 precision.
+4. Using the provided Jupyter notebook, we will run inference on the GPU instance using the Mistral 7B model
 
-5. Run inference on the GPU instance using the Mistral 7B ```quantized to INT8``` model and the provided Jupyter notebook
 
 ## CPU EC2 instance in AWS M7i.8xlarge with quantized model weights

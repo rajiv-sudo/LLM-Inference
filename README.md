@@ -6,7 +6,7 @@ Model Used: **mistralai/Mistral-7B-v0.1**
 We will do our setup and testing in AWS EC2 instances. Here are the scenarios we will test. Please click the link for each scenario to nagivate to the details of setup, code and running the test.
 
 ***Here are the differenct scenarios***
-## [01 - GPU EC2 instance in AWS P3.8xlarge with model's native precision](https://github.com/rajiv-sudo/LLM-Inference/tree/main/LLM_Mistral_7B_Inference_EC2_GPU)
+## [01 - GPU EC2 instance in AWS P3.8xlarge with model's native precision](https://github.com/rajiv-sudo/LLM-Inference/tree/main/Mistral-7B-GPU-EC2-P3.8xl)
 
 In this tutorial, we will:
 
